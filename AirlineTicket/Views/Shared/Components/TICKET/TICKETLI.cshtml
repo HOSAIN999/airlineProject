@@ -1,0 +1,65 @@
+﻿@model List<BE.TicketBE>
+@{
+}
+
+        <main class="cart-page default space-top-30">
+            <div class="container">
+                <div class="row">
+                   
+                    <div class="cart_content col-xl-12 col-lg-12 col-md-12">
+                        <header class="card-header">
+                            <h3 class="card-title"><span>بلیط ها</span></h3>
+                        </header>
+                        <div class="table-responsive default">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">بلیط</th>
+                                        <th scope="col">مبدا</th>
+                                        <th scope="col">مقصد</th>
+                                        <th scope="col">تعداد</th>
+                                        <th scope="col">قیمت بلیط</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                          @foreach (var Ticket in Model)
+                                           {
+                                             <tr class="cart_item">
+                                               <td>
+                                                   <img src="/Image/Ticket/@Ticket.Pic" alt="">
+                                                   <i class="fa fa-times" aria-hidden="true"></i>
+                                               </td>
+                                               <td>
+                                                   <h3 class="cart_title">
+                                                     <a> @Ticket.Mabdae</a>
+                                                   </h3>
+                                                   
+                                               </td>
+                                               <td>
+                                                    <h3 class="cart_title">
+                                                     <a> @Ticket.Maghsad</a>
+                                                   </h3>
+                                               </td>
+                                               <td><input type="number" class="tedad" value="1" /></td>
+                                               <td class="price_alltd">@Ticket.Price <span>تومان</span></td>
+                                               <td>    
+                                                    <div class="col-12 text--center">
+                                                        <a asp-action="Details" asp-controller="Ticket" asp-route-id="@Ticket.ID" type="submit" class="btn big_btn btn-main-masai"> تمام اطلاعات</a>
+                                                    </div>
+                                               </td>
+                                             </tr>
+                                           }
+
+                                   
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                      
+                    </div>
+                    </div>
+           
+        </main>

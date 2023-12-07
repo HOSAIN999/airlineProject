@@ -1,0 +1,383 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+@model List<BE.TicketBE>
+@section pre{
+			<title>قالب مدیریتی مترونیک با 50 دمو جذاب</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners و professionals. Multi-demo, حالت تیره, RTL support و complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now و get life-time updates for free." />
+		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="مترونیک - پنل ادمین بوت استراپ Template, HTML, VueJS, React, Angular. Laravel, Asp.Net Core, روبی روی ریل, Spring Boot, Blazor, Django, Express.js, Node.js, Flask Admin داشبورد Theme & Template" />
+		<meta property="og:url" content="https://keenthemes.com/metronic" />
+		<meta property="og:site_name" content="ساتراس وب | مترونیک" />
+		<link rel="canonical" href="Https://preview.keenthemes.com/metronic8" />
+		<link rel="shortcut icon" href="~/assets1/media/logos/favicon.ico" />
+		<!--begin::Fonts(mوatory for all pages)-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Vendor Stylesheets(used for this page only)-->
+		<link href="~/assets1/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Vendor Stylesheets-->
+		<!--begin::Global Stylesheets Bundle(mوatory for all pages)-->
+		<link href="~/assets1/plugins/global/plugins.bundle.rtl.css" rel="stylesheet" type="text/css" />
+		<link href="~/assets1/css/style.bundle.rtl.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
+		  <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="~/assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="~/assets/img/favicon.png">
+    <title>تغییر اطلاعات حساب  </title>
+    <meta name="description" content="مَسای شاپ ">
+    <meta name="author" content="Mirazimi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+
+    <!-- CSS Files -->
+    <link href="~/assets/fonts/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="~/assets/fonts/font-awesome/css/solid.css" rel="stylesheet" />
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/css/main_ui.css" rel="stylesheet" />
+    <link href="~/assets/css/icon.css" rel="stylesheet" />
+    <link href="~/assets/css/plugins/owl.carousel.css" rel="stylesheet" />
+    <link href="~/assets/css/plugins/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="~/assets/css/nouislider.min.css" rel="stylesheet" /><link href="~/assets/css/main.css" rel="stylesheet" />
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+}
+<div class="card">
+	 
+										<!--begin::کارت header-->
+										<div class="card-header card-header-stretch border-bottom border-gray-200">
+											<!--begin::Title-->
+											<div class="card-title">
+												<h3 class="fw-bold m-0">بلیط ها</h3>
+											</div>
+											<!--end::Title-->
+											<!--begin::Toolbar-->
+											<div class="card-toolbar m-0">
+												<!--begin::Tab nav-->
+												<ul class="nav nav-stretch nav-line-tabs border-transparent" role="tablist">
+													<!--begin::Tab nav item-->
+													<li class="nav-item" role="presentation">
+														<a id="kt_billing_6months_tab" class="nav-link fs-5 fw-semibold me-3 active" data-bs-toggle="tab" role="tab" href="#kt_billing_months">ماه</a>
+													</li>
+													<!--end::Tab nav item-->
+													<!--begin::Tab nav item-->
+													<li class="nav-item" role="presentation">
+														<a id="kt_billing_1year_tab" class="nav-link fs-5 fw-semibold me-3" data-bs-toggle="tab" role="tab" href="#kt_billing_year">سال</a>
+													</li>
+													<!--end::Tab nav item-->
+													<!--begin::Tab nav item-->
+													<li class="nav-item" role="presentation">
+														<a id="kt_billing_alltime_tab" class="nav-link fs-5 fw-semibold" data-bs-toggle="tab" role="tab" href="#kt_billing_all">همه زمان</a>
+													</li>
+													<!--end::Tab nav item-->
+												</ul>
+												<!--end::Tab nav-->
+											</div>
+											<!--end::Toolbar-->
+										</div>
+										<!--end::کارت header-->
+										<!--begin::Tab Content-->
+										<div class="tab-content">
+											<!--begin::Tab panel-->
+											<div id="kt_billing_months" class="card-body p-0 tab-pane fade show active" role="tabpanel" aria-labelledby="kt_billing_months">
+												<!--begin::Table container-->
+												<div class="table-responsive">
+													   <div  class="row">
+                             
+                                <div class="col-lg-6 col-md-6">
+                                    <header class="card-header">
+                                        <h3 class="card-title"><span>ثبت بلیط هواپیما</span></h3>
+                                    </header>
+                                    <div class="login_box">
+
+
+
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12">
+                                                    
+                                                    <div class="form-account-row">
+                                                        <input class="input_second input_all" type="search" name="Company" placeholder="جستجو">
+                                                    </div>
+                                                </div>
+                    
+                                            </div>
+
+
+                                    </div>
+                                </div>
+                               
+                                <div class="col-12 text--center">
+                                    <button type="submit" id="btn1" class="btn big_btn btn-main-masai">Search</button>
+                                </div>
+                             
+                          </div>
+						   
+						  <br />
+													<!--begin::Table-->
+													<table class="table table-row-bordered align-middle gy-4 gs-9">
+														<thead class="border-bottom border-gray-200 fs-6 text-gray-600 fw-bold bg-light bg-opacity-75">
+															<tr>
+															<td class="min-w-150px">شرکت هوایی</td>
+																<td class="min-w-250px">مبدا</td>
+																<td class="min-w-150px">مقصد</td>
+																<td class="min-w-150px">نوع پرواز</td>
+																<td class="min-w-150px">شماره پرواز</td>
+																<td class="min-w-150px">تصویر</td>
+																<td></td>
+															</tr>
+														</thead>
+														<tbody class="fw-semibold text-gray-600">
+															@{
+														 	foreach(var i in Model) 
+															                      {
+																				       <tr> 
+																							
+																							    <td>@i.Mabdae</td>
+																						    	<td>@i.Maghsad</td>
+																						    	<td>@i.TypeAir</td>
+																						    	<td>@i.numAIR</td>
+																						    	<td>@i.Price</td>
+																						    	<td><img src="/Image/Ticket/@i.Pic"/></td>
+																						    	<td class="text-right">
+																						    		<button  class="btn btt1 btn-sm btn-light btn-active-light-primary"
+																						    		
+																						    		onclick="edit(@i.ID,'@i.Mabdae','@i.Maghsad','@i.numAIR','@i.TypeAir',@i.Price,'@i.Pic')"
+																						    		>نمایش</button>
+																						        </td>
+																						</tr>
+														                           }
+															}
+														
+															<!--end::Table row-->
+															<!--begin::Table row-->
+															
+														</tbody>
+													</table>
+			                                         	@{
+			                                         		BLL.TicketBLL TBLL=new BLL.TicketBLL();
+			                                         		int f = TBLL.gettotall();
+			                                         		int count;
+			                                         		if (f % 10 == 0) count = f / 10;
+			                                         		else count = (f / 10) + 1;
+			                                         		for (var i = 0; i < count; i++)
+			                                         		{
+			                                         				<a class="Pagginate-button" aria-controls="multi-select"data-dt-idx=@i tabindex="0" href="@Url.Action("getskip","Ticket",new{c=i})"> @i</a>
+			                                         		}
+			                                         	}
+													<!--end::Table-->
+												</div>
+												<!--end::Table container-->
+											</div>
+											<!--end::Tab panel-->
+											<!--begin::Tab panel-->
+											<div id="kt_billing_year" class="card-body p-0 tab-pane fade" role="tabpanel" aria-labelledby="kt_billing_year">
+												<!--begin::Table container-->
+												<div class="table-responsive">
+													<!--begin::Table-->
+													<table class="table table-row-bordered align-middle gy-4 gs-9">
+														<thead class="border-bottom border-gray-200 fs-6 text-gray-600 fw-bold bg-light bg-opacity-75">
+															<tr>
+																<td class="min-w-150px">شرکت هوایی</td>
+																<td class="min-w-250px">مبدا</td>
+																<td class="min-w-150px">مقصد</td>
+																<td class="min-w-150px">نوع پرواز</td>
+																<td class="min-w-150px">تصویر</td>
+																<td class="min-w-150px">شماره پرواز</td>
+																<td></td>
+															</tr>
+														</thead>
+														<tbody class="fw-semibold text-gray-600">
+															<!--begin::Table row-->
+															<tr>
+																<td>آذر 01, 2021</td>
+																<td>
+																	<a href="#">صورتحساب for Ocrober 2023</a>
+																</td>
+																<td>$250.79</td>
+															
+																<td class="text-right">
+																	<a href="#" class="btt btn-sm btn-light btn-active-light-primary">نمایش</a>
+																</td>
+															</tr>
+															<!--end::Table row-->
+															<!--begin::Table row-->
+														
+														</tbody>
+													</table>
+													<!--end::Table-->
+												</div>
+												<!--end::Table container-->
+											</div>
+											<!--end::Tab panel-->
+											<!--begin::Tab panel-->
+											<div id="kt_billing_all" class="card-body p-0 tab-pane fade" role="tabpanel" aria-labelledby="kt_billing_all">
+												<!--begin::Table container-->
+												<div class="table-responsive">
+													<!--begin::Table-->
+													<table class="table table-row-bordered align-middle gy-4 gs-9">
+														<thead class="border-bottom border-gray-200 fs-6 text-gray-600 fw-bold bg-light bg-opacity-75">
+															<tr>
+																<td class="min-w-150px">شرکت هوایی</td>
+																<td class="min-w-250px">مبدا</td>
+																<td class="min-w-150px">مقصد</td>
+																<td class="min-w-150px">نوع پرواز</td>
+																<td class="min-w-150px">تصویر</td>
+																<td class="min-w-150px">شماره پرواز</td>
+																<td></td>
+															</tr>
+														</thead>
+														<tbody class="fw-semibold text-gray-600">
+															<!--begin::Table row-->
+															<tr>
+																<td>آبان 01, 2021</td>
+																<td>
+																	<a href="#">صورتحساب for Ocrober 2023</a>
+																</td>
+																<td>$123.79</td>
+																
+																<td class="text-right">
+																	<a href="#" class="btt btn-sm btn-light btn-active-light-primary">نمایش</a>
+																</td>
+															</tr>
+															<!--end::Table row-->
+															<!--begin::Table row-->
+														
+														</tbody>
+													</table>
+													<!--end::Table-->
+												</div>
+												<!--end::Table container-->
+											</div>
+											<!--end::Tab panel-->
+										</div>
+										   <div class="modal-share modal-width-custom2 modal fade " id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="addressModalLabel">انتخاب ادرس</h4>
+                    </div>
+                    <div class="modal-body">
+                          <form asp-action="edit" asp-controller="Ticket" method="post" enctype="multipart/form-data" class="">
+                                <div class="col-lg-6 col-md-6">
+                                    <header class="card-header">
+                                        <h3 class="card-title"><span>ثبت بلیط هواپیما</span></h3>
+                                    </header>
+                                    <div class="login_box">
+
+
+
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12">
+                                                    <div class="form-account-title"><span>*</span>شرکت هوایی</div>
+                                                    <div class="form-account-row">
+                                                        <input class="input_second input_all form-control" type="text" name="Company" placeholder="AirLine">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12">
+                                                    <div class="form-account-title">مبدا </div>
+                                                    <div class="form-account-row">
+														<input type="hidden" id="ID" name="ID" />
+                                                        <input class="input_second input_all form-control" type="text" name="Mabdae" placeholder="مثال: مشهد">
+                                                    </div>
+                                                </div>
+                                                  <div class="col-md-12 col-sm-12">
+                                                    <div class="form-account-title">مقصد</div>
+                                                    <div class="form-account-row">
+                                                        <input class="input_second input_all form-control" type="text" name="Maghsad" placeholder="مثال: تهران">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12">
+                                                    <div class="form-account-title"><span>*</span> شماره پرواز </div>
+                                                    <div class="form-account-row">
+                                                        <input class="input_second input_all form-control" type="number" name="numAIR" placeholder="مثال: 0911">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12">
+                                                    <div class="form-account-title"> نوع پرواز</div>
+                                                    <div class="form-account-row">
+                                                        <input class="input_second input_all form-control" type="text" name="TypeAir" placeholder="مثال:داخلی">
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12">
+                                                    <div class="form-account-title"> نوع پرواز</div>
+                                                    <div class="form-account-row">
+                                                        <input class="input_second input_all form-control" type="number" name="Price" placeholder="قیمت">
+                                                    </div>
+                                                </div>
+                                                   <div class="col-md-12 col-sm-12">
+                                                    <div class="form-account-title"></div>
+                                                    <div class="form-account-row">
+                                                        <input class="input_second input_all form-control" type="file" name="Pic" placeholder="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-account-agree">
+                                                        <label class="checkbox-form checkbox-primary">
+                                                            <input type="checkbox" id="agree">
+                                                            <span class="checkbox-check"></span>
+                                                        </label>
+                                                        <label for="agree"> تمایل به دریافت پیامک دارم</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                    </div>
+                                    </div>
+                               
+                                <div class="col-12 text--center">
+                                    <button type="submit" class="btn big_btn btn-main-masai">ویرایش بلیط   </button>
+                                </div>
+                               </div> 
+                             </form>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+										<!--end::Tab Content-->
+									</div>
+									@section Section{
+										<!--end::Modal - دعوت دوست-->
+		<script src="~/assets1/js/custom/pages/user-profile/general.js"></script>
+		<script src="~/assets1/js/custom/account/billing/general.js"></script>
+		<script src="~/assets1/js/custom/utilities/modals/create-app.js"></script>
+		<script src="~/assets1/js/custom/utilities/modals/offer-a-deal/type.js"></script>
+		<script src="~/assets1/js/custom/utilities/modals/offer-a-deal/details.js"></script>
+		<script src="~/assets1/js/custom/utilities/modals/offer-a-deal/finance.js"></script>
+		<script src="~/assets1/js/custom/utilities/modals/offer-a-deal/complete.js"></script>
+		<script src="~/assets1/js/custom/utilities/modals/offer-a-deal/main.js"></script>
+		<script src="~/assets1/js/custom/utilities/modals/new-card.js"></script>
+		<script src="~/assets1/js/custom/utilities/modals/new-address.js"></script>
+    
+    
+    <script src="~/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+ 
+    <script>
+function edit(ID,Mabdae, Maghsad, numAIR, TypeAir, Price, Pic) {
+    $("#ID").val(ID);
+   $("#Mabdae").val(Mabdae);
+   $("#Maghsad").val(Maghsad);
+   $("#numAIR").val(numAIR);
+  $("#TypeAir").val(TypeAir);
+  $("#Price").val(Price);
+  $("#Pic").val(Pic);
+  $("#addressModal").modal("show");
+}
+
+	</script>
+
+
+
+
+
+
+	}
